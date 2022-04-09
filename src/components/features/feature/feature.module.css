@@ -1,0 +1,13 @@
+.feature{
+    width: 250px;
+    background-color: gold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.icon{
+    height: 30px;
+    width: 30px;
+    background-color: cadetblue;
+}

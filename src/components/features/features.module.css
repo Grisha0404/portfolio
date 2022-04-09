@@ -1,0 +1,20 @@
+.featuresBlock {
+    height: 100vh;
+    background-color: gold;
+}
+
+.featuresBlockContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.block {
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
