@@ -1,6 +1,6 @@
 .featuresBlock {
-    height: 100vh;
-    background-color: gold;
+    min-height: 100vh;
+    background-color: #009999;
 }
 
 .featuresBlockContainer {
