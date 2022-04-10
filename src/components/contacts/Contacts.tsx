@@ -11,9 +11,10 @@ export const Contacts = () => {
             <h2>
                 Get in touch
             </h2>
-                    <input/>
-                    <input/>
-                    <input/>
+                    <input style={{width:'450px'}}/>
+                    <input style={{ width:'450px'}}/>
+                        <input style={{height: '100px', width:'450px'}}/>
+                    <button>Send a Message</button>
                 </div>
                 <div className={style.contactsBlock}>
                     <h2>Contact info</h2>
