@@ -8,8 +8,8 @@ export const Nav = () => {
     return (
         <div className={style.navLink}>
             <NavLink to='/home' >Home</NavLink>
-            <NavLink to='/about' >About</NavLink>
             <NavLink to='/skills' >Skills</NavLink>
+            <NavLink to='/features' >Features</NavLink>
             <NavLink to='/contact' >Contact</NavLink>
         </div>
     );
