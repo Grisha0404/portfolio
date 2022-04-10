@@ -1,6 +1,6 @@
 .main{
     height: 100vh;
-    background-color: aquamarine;
+    background-color: #FFD073;
 }
 
 .text{
@@ -10,4 +10,5 @@
     border: 1px solid black;
     height: 500px;
     width: 350px;
+    background-color: #FFAA00;
 }
