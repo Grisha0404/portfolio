@@ -4,29 +4,27 @@
 }
 .contactBlockContainer{
     border: 1px solid black;
-    width: 100%;
+    width: 80%;
 }
 .messageBlock{
-    width: 45%;
+    width: 100%;
     height: 300px;
     border: 1px solid black;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.inputBlock{
-    width: 100%;
-}
-.contactsBlock{
-    border: 1px solid black;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-}
+
 .infoBlock{
     border: 1px solid black;
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
-
+    justify-content: space-around;
 }
+
+.contactsBlock{
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+}
+
