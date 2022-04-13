@@ -2,6 +2,7 @@ import React from 'react';
 import style from "./contacts.module.css";
 import {Contact} from "./contact/Contact";
 import styleC from "../../command/styles/container.module.css";
+import {Input} from "../../command/Input/Input";
 
 export const Contacts = () => {
     return (
