@@ -2,19 +2,17 @@ import React from 'react';
 import style from "./contacts.module.css";
 import {Contact} from "./contact/Contact";
 import styleC from "../../command/styles/container.module.css";
-import {Input} from "../../command/Input/Input";
+import {Title} from "../../command/Title/Title";
 
 export const Contacts = () => {
     return (
         <div className={style.contacts}>
             <div className={`${styleC.container} ${style.contactBlockContainer} `}>
                 <div className={style.messageBlock}>
-                    <h2>
-                        Get in touch
-                    </h2>
-                    <input style={{width: '80%'}}/>
-                    <input style={{width: '80%'}}/>
-                    <input style={{height: '100px', width: '80%'}}/>
+                    <Title title={'Get in touch'}/>
+                    <input/>
+                    <input/>
+                    <textarea/>
                     <button>Send a Message</button>
                 </div>
                 <div className={style.contactsBlock}>
