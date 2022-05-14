@@ -2,12 +2,13 @@ import React from 'react';
 import style from './features.module.css'
 import styleC from "../../command/styles/container.module.css";
 import {Feature} from "./feature/Feater";
+import {Title} from "../../command/Title/Title";
 
 export const Features = () => {
     return (
         <div className={style.featuresBlock}>
             <div className={`${styleC.container} ${style.featuresBlockContainer} `}>
-                <h2>What I do</h2>
+                <Title title={'What I do'}/>
                 <div className={style.block}>
                     <Feature title={"Business Strategy"}
                              descriptions={'I throw myself down among the tall grass by the stream as I\n' +
