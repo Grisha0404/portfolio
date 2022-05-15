@@ -1,0 +1,24 @@
+@import "../../command/styles/Sass/variables";
+.featuresBlock {
+  min-height: 100vh;
+  background-color: $bgSecondColor;
+  display: flex;
+
+  .featuresBlockContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .block {
+      border: 1px solid $bgSecondColor;
+      width: 100%;
+      display: flex;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      @media screen and (max-width: 939px) {
+        justify-content: space-around;
+      }
+    }
+  }
+}
