@@ -1,5 +1,5 @@
 import React from 'react';
-import style from "./projects.module.css";
+import style from "./projects.module.scss";
 import styleC from "../../command/styles/container.module.css";
 import {Project} from "./project/project";
 import {HashRouter} from "react-router-dom";
@@ -10,13 +10,13 @@ import imgWeather from '../../assets/image/screenshot.png'
 
 export const Projects = () => {
     const socialImg = {
-        backgroundImage: `url(' ${imgSocial}')`
+        backgroundImage: `url(${imgSocial})`
     }
     const todolist = {
-        backgroundImage: `url('${imgTodo}')`
+        backgroundImage: `url(${imgTodo})`
     }
     const weatherApp = {
-        backgroundImage: `url('${imgWeather}')`
+        backgroundImage: `url(${imgWeather})`
     }
     return (
         <div className={style.projectsBlock}>
