@@ -1,0 +1,35 @@
+@import "../../command/styles/Sass/variables";
+@import "../../command/styles/Sass/mixins";
+
+.footerBlock {
+  height: 20vh;
+  background-color: $bgColor;
+  color: $textColor;
+
+  .footerBlockContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .socialBlock {
+      width: 35%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 5px;
+    }
+  }
+  .footerBlockContainer h2{
+    @include textSize(25px, 600);
+    transition: .2s ease;
+    margin: 10px;
+  }
+  .footerBlockContainer p{
+    @include textSize(15px, 600);
+    transition: .2s ease;
+    margin: 5px;
+  }
+}
+
+
+
