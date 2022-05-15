@@ -1,0 +1,38 @@
+@import "../../../command/styles/Sass/variables";
+@import "../../../command/styles/Sass/mixins";
+
+.projectBlock {
+  border-radius: 5px;
+  background-color: $bgSecondColor;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 350px;
+  align-items: center;
+  margin: 10px;
+
+  .icon {
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+  }
+
+  .title {
+    @include textSize(18px, 600);
+    transition: .2s ease;
+  }
+
+  .textInfo {
+    padding: 0.2rem 1rem;
+    @include textSize(14px, 500);
+    line-height: 1.6;
+    transition: .2s ease;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+
+
+
