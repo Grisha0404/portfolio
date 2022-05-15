@@ -1,0 +1,14 @@
+@import "src/command/styles/Sass/variables";
+.head {
+    top: 0;
+    z-index: 2;
+    position: -webkit-sticky;
+    position: sticky;
+    height: 60px;
+    background-color: $bgSecondColor;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
