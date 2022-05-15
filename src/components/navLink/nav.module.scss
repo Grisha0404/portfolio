@@ -1,0 +1,23 @@
+@import "src/command/styles/Sass/variables";
+@import "src/command/styles/Sass/mixins";
+.navLink{
+    vertical-align: middle;
+    position: relative;
+    color: $textColor;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    .link{
+        @include textSize(20px, 400);
+        text-decoration: none;
+        color: $textColor;
+        line-height: 35px;
+        margin-left: 0;
+        margin-right: 0;
+        padding-bottom: 0;
+        &:hover{
+            font-size: 25px;
+            color:$primaryColor;
+        }
+    }
+}
