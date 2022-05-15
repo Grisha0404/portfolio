@@ -1,0 +1,18 @@
+@import "src/command/styles/Sass/variables";
+@import "src/command/styles/Sass/mixins";
+.main{
+    height: 100vh;
+    background-color: $bgSecondColor;
+    .text{
+        @include textSize (25px, 700);
+        width: 600px;
+    }
+    .photo{
+        border: 1px solid $primaryColor;
+        height: 400px;
+        width: 350px;
+    }
+}
+
+
+

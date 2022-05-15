@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './main.module.css'
+import style from './main.module.scss'
 import styleC from '../../command/styles/container.module.css'
 
 export const Main = () => {
@@ -9,7 +9,7 @@ export const Main = () => {
                 <div className={style.text}>
                     <span>Welcome to my world</span>
                     <h1>Hello I'm
-                        <span> Grigoriy Kom! </span>
+                        <span> Gregory Kom! </span>
                     </h1>
                     <span>a Front-end Developer</span>
                 </div>
