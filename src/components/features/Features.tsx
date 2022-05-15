@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './features.module.css'
+import style from './features.module.scss'
 import styleC from "../../command/styles/container.module.css";
 import {Feature} from "./feature/Feater";
 import {Title} from "../../command/Title/Title";
