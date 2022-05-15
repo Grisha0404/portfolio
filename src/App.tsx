@@ -7,11 +7,16 @@ import {Skills} from "./components/skills/Skills";
 import {Projects} from "./components/projects/Porojects";
 import {Contacts} from "./components/contacts/Contacts";
 import {Footer} from "./components/footer/Footer";
+import {HashRouter} from "react-router-dom";
+import {Routes} from "./components/Routes/Routes";
 
 function App() {
     return (
         <div className='App'>
-            <Header/>
+            <HashRouter>
+                <Header/>
+                <Routes/>
+            </HashRouter>
             <Main/>
             <Projects/>
             <Features/>
