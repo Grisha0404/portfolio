@@ -1,0 +1,41 @@
+@import "../../../command/styles/Sass/variables";
+@import "../../../command/styles/Sass/mixins";
+
+.skill {
+  border-radius: 5px;
+  min-width: 300px;
+  background-color: $bgSecondColor;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.skill h3, p {
+  @include textSize(20px, 600);
+  transition: .2s ease;
+  margin: 10px;
+}
+
+
+.skillProgress {
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+  display: flex;
+  font-size: .75rem;
+  height: 1rem;
+  overflow: hidden;
+
+  .skillProgressBlock {
+    background-color: $primaryColor;
+    color: $textColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: width .6s ease;
+  }
+
+}
+
+
