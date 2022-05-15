@@ -1,0 +1,69 @@
+@import "../../command/styles/Sass/variables";
+
+.contacts {
+  height: 100vh;
+  background-color: $bgSecondColor;
+
+  .contactBlockContainer {
+    border: 1px solid $bgSecondColor;
+    width: 80%;
+
+    .messageBlock {
+      width: 100%;
+      min-height: 300px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .messageBlock input {
+      width: 80%;
+      border: 0;
+      height: 30px;
+      margin-bottom: 10px;
+      background-color: $bgColor;
+    }
+
+    .messageBlock textarea {
+      height: 100px;
+      width: 80%;
+      border: 0;
+      background-color: $bgColor;
+    }
+
+    .messageBlock button {
+      margin-top: 20px;
+      color: $textColor;
+      background-color: $bgSecondColor;
+      border: 1px solid $primaryColor;
+      width: 120px;
+      height: 50px;
+    }
+  }
+
+  .contactsBlock {
+    color: $textColor;
+    width: 100%;
+    text-align: center;
+
+    .infoBlock {
+      border: 1px solid $bgSecondColor;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

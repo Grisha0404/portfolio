@@ -1,0 +1,28 @@
+@import "../../../command/styles/Sass/variables";
+@import "../../../command/styles/Sass/mixins";
+
+.contact {
+  background-color: $bgColor;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  .icon {
+    display: inline-flex;
+    line-height: 30px;
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.contact h3, p {
+  @include textSize(20px, 600);
+  transition: .2s ease;
+  margin: 10px;
+}
+
