@@ -18,6 +18,9 @@ export const Projects = () => {
     const weatherApp = {
         backgroundImage: `url(${imgWeather})`
     }
+    const aboutSocial = 'Used technologies: React/Redux/ TypeScript/Redux- thunk/React-router- dom v6/React-hook-form/Axios/Jest; Social network app with using react hooks, routing. ng. lazy loading, working with REST api, login/logout flow, pagination, form and validation/file uploading using unit-tests for code workability check.'
+    const aboutWeather = 'Used technologies: React/Redux/Redux-Toolkit/ React-router- dom v6/Axios /Material UI; Weather app created with react hooks, material Ul, REST api request/response flow and etc.'
+    const aboutTodolist = 'Used technologies: React/Redux/Redux-Toolkit/ React-router- dom v6/Jest(Unit-Tests) /Storybook/Axios /Formik/Material UI; Todolist app created with react hooks, routing and redirects, material Ul, REST api request/response flow, unit-tests and etc.'
     return (
         <div className={style.projectsBlock}>
             <div className={`${styleC.container} ${style.projectsBlockContainer} `}>
@@ -25,12 +28,12 @@ export const Projects = () => {
                 <div className={style.block}>
                     <HashRouter>
                         <Project title={"Social"} link={'/social'}
-                                icon={socialImg}
-                                 infoTitle={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
-                        <Project title={"TodoList"} link={'/counter'} icon={todolist}
-                                 infoTitle={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
+                                 icon={socialImg}
+                                 infoTitle={aboutSocial}/>
                         <Project title={"Weather App"} link={'/todolist'} icon={weatherApp}
-                                 infoTitle={'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}/>
+                                 infoTitle={aboutWeather}/>
+                        <Project title={"TodoList"} link={'/counter'} icon={todolist}
+                                 infoTitle={aboutTodolist}/>
                     </HashRouter>
                 </div>
             </div>
