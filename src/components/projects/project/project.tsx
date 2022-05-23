@@ -1,6 +1,5 @@
 import React from 'react';
 import style from "./project.module.scss";
-import {NavLink} from "react-router-dom";
 
 type ProjectType = {
     title: string,
