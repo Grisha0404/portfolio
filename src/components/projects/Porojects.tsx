@@ -2,7 +2,6 @@ import React from 'react';
 import style from "./projects.module.scss";
 import styleC from "../../command/styles/container.module.css";
 import {Project} from "./project/project";
-import {HashRouter} from "react-router-dom";
 import {Title} from "../../command/Title/Title";
 import imgTodo from '../../assets/image/3536667_935xp.jpeg'
 import imgSocial from '../../assets/image/maxresdefault.jpeg'
@@ -26,7 +25,6 @@ export const Projects = () => {
             <div className={`${styleC.container} ${style.projectsBlockContainer} `}>
                 <Title title={'My Projects'}/>
                 <div className={style.block}>
-                    <HashRouter>
                         <Project title={"Social"} link={'/social'}
                                  icon={socialImg}
                                  infoTitle={aboutSocial}/>
@@ -34,7 +32,6 @@ export const Projects = () => {
                                  infoTitle={aboutWeather}/>
                         <Project title={"TodoList"} link={'/counter'} icon={todolist}
                                  infoTitle={aboutTodolist}/>
-                    </HashRouter>
                 </div>
             </div>
         </div>
