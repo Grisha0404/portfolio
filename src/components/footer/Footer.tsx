@@ -21,9 +21,9 @@ export const Footer = () => {
             <div className={`${styleC.container} ${style.footerBlockContainer} `}>
                 <h2>Gregory Kom</h2>
                 <div className={style.socialBlock}>
-                    <Social icon={link}/>
-                    <Social icon={inst}/>
-                    <Social icon={git}/>
+                    <Social icon={link} link={'https://www.linkedin.com/in/grisha0404/'}/>
+                    <Social icon={inst} link={'https://www.instagram.com/'}/>
+                    <Social icon={git} link={'https://github.com/Grisha0404'}/>
                 </div>
                 <p>© 2022. All rights reserved</p>
             </div>
