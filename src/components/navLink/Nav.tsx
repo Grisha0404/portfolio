@@ -1,15 +1,17 @@
 import React from 'react';
-import {NavLink} from "react-router-dom";
+import {Link} from "react-router-dom";
 import style from './nav.module.scss'
+import {PATH} from "../Routes/Routes";
 
 export const Nav = () => {
     return (
         <div className={style.navLink}>
-            <NavLink to='/home'  className={style.link}>Home</NavLink>
-            <NavLink to='/projects' className={style.link}>Projects</NavLink>
-            <NavLink to='/features' className={style.link}>Features</NavLink>
-            <NavLink to='/skills' className={style.link}>Skills</NavLink>
-            <NavLink to='/contact' className={style.link}>Contact</NavLink>
+            <Link to={PATH.HOME} className={style.link}>Home</Link>
+            <Link to={PATH.PROJECTS} className={style.link}>Projects</Link>
+            <Link to={PATH.FEATURES} className={style.link}>Features</Link>
+            <Link to={PATH.SKILLS} className={style.link}>Skills</Link>
+            <Link to={PATH.CONTACT} className={style.link}>Contact</Link>
         </div>
     );
 };
+
