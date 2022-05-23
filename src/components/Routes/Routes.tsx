@@ -1,5 +1,5 @@
 import React from 'react';
-import {Switch, Route} from "react-router-dom";
+import {Navigate, Route, Routes} from "react-router-dom";
 import {Projects} from "../projects/Porojects";
 import {Main} from "../main/Main";
 import {Features} from "../features/Features";
@@ -14,16 +14,17 @@ export const PATH = {
     CONTACT: '/contact'
     // add paths
 }
-export const Routes = () => {
+export const Routers = () => {
     return (
         <div>
-            <Switch>
-                <Route path={PATH.HOME} render={() => <Main/>}/>
-                <Route path={PATH.PROJECTS} render={() => <Projects/>}/>
-                <Route path={PATH.FEATURES} render={() => <Features/>}/>
-                <Route path={PATH.SKILLS} render={() => <Skills/>}/>
-                <Route path={PATH.CONTACT} render={() => <Contacts/>}/>
-            </Switch>
+                <Routes>
+                    <Route path="/" element={<Navigate to={PATH.HOME}/>}/>
+                    <Route path={PATH.HOME} element={<Main/>}/>
+                    <Route path={PATH.PROJECTS} element={<Projects/>}/>
+                    <Route path={PATH.FEATURES} element={<Features/>}/>
+                    <Route path={PATH.SKILLS} element={<Skills/>}/>
+                    <Route path={PATH.CONTACT} element={<Contacts/>}/>
+                </Routes>
         </div>
     );
 };
